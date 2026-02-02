@@ -22,7 +22,7 @@ public class QC_Pending_Batches {
             Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("Driver loaded");
 
-            String url = "jdbc:mysql://dev2kamal.humanbrain.in:3306/HBA_V2";
+            String url = "jdbc:mysql://apollo2.humanbrain.in:3306/HBA_V2";
             String username = "root";
             String password = "Health#123";
             Connection connection = DriverManager.getConnection(url, username, password);
@@ -98,12 +98,12 @@ public class QC_Pending_Batches {
 
     private void sendEmailAlert(String messageBody) {
         // Recipient's email ID needs to be mentioned.
-    	String[] to = {"karthik6595@gmail.com" , "sindhu.r@htic.iitm.ac.in"};
-        String[] cc = {"richavermaj@gmail.com", "nathan.i@htic.iitm.ac.in", "divya.d@htic.iitm.ac.in", "venip@htic.iitm.ac.in"};
+    	String[] to = {"gayuriche26@gmail.com"};
+       // String[] cc = {"richavermaj@gmail.com", "nathan.i@htic.iitm.ac.in", "divya.d@htic.iitm.ac.in", "venip@htic.iitm.ac.in"};
         String[] bcc = {};
 
         // Sender's email ID needs to be mentioned
-        String from = "gayathri@htic.iitm.ac.in";
+        String from = "automationsoftware25@gmail.com";
 
         // Assuming you are sending email from through gmails smtp
         String host = "smtp.gmail.com";
@@ -120,7 +120,7 @@ public class QC_Pending_Batches {
         // Get the Session object and pass username and password
         Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("gayathri@htic.iitm.ac.in", "Gayu@0918");
+                return new PasswordAuthentication("automationsoftware25@gmail.com", "wjzcgaramsqvagxu");
             }
         });
 
